@@ -1,7 +1,7 @@
 import { useRpsContext } from "../context";
 
 const SingleOption = ({ id, name, img }) => {
-  const { start, chooseOption} = useRpsContext();
+  const { start, chooseOption } = useRpsContext();
   return (
     <div
       className={`${
@@ -11,8 +11,14 @@ const SingleOption = ({ id, name, img }) => {
       onClick={() => chooseOption(id)}
     >
       <div>
-        <img src={img} alt={name} className="w-36 rounded-full" />
-        <h3 className="capitalize text-xl text-center pt-2 font-semibold">{name}</h3>
+        <img
+          src={img}
+          alt={name}
+          className="w-36 rounded-full"
+        />
+        <h3 className="capitalize text-xl text-center pt-2 font-semibold">
+          {name}
+        </h3>
       </div>
     </div>
   );
