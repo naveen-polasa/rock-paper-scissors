@@ -10,9 +10,9 @@ const Play = () => {
       <h2 className="font-bold text-xl py-2 inline-block px-5 rounded-xl my-2 bg-red-100 border-2 border-red-400">
         Choose From Above Options
       </h2>
-      <div className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-around py-5 items-center">
+      <div className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-around py-5 items-center lg:items-start">
         <User />
-        <div className="w-52 h-24">
+        <div className="w-52 h-20 mt-4 lg:mt-12">
           <button
             className="font-bold px-3 py-1 rounded-lg bg-red-400 text-white text-xl w-36"
             onClick={toggleShowResult}

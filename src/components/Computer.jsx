@@ -15,7 +15,7 @@ const Computer = () => {
         {showResult ? (
           <div>
             <img src={img} alt={name} className="w-36 rounded-full" />
-            <h3 className="capitalize text-xl text-center pt-2">{name}</h3>
+            <h3 className="capitalize text-xl text-center pt-2 font-semibold">{name}</h3>
           </div>
         ) : (
           <div className="h-44 flex justify-center items-center">
@@ -23,7 +23,7 @@ const Computer = () => {
           </div>
         )}
       </div>
-      <h3 className="font-bold inline-block px-3 py-1 rounded-lg bg-red-400 text-white ">
+      <h3 className="font-bold inline-block px-3 py-1 rounded-lg bg-red-400 text-white mr-3">
         COMPUTER
       </h3>
     </div>

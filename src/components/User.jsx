@@ -8,7 +8,9 @@ const User = () => {
   return (
     <div>
       <SingleOption {...data[option - 1]} />
-      <h3 className="font-bold inline-block px-3 py-1 rounded-lg bg-red-400 text-white">USER</h3>
+      <h3 className="font-bold inline-block px-3 py-1 rounded-lg bg-red-400 text-white mr-3">
+        USER
+      </h3>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Play from "./Play";
 
 const Home = () => {
   const { handleStart, start } = useRpsContext();
-  
+
   return (
     <section>
       <div className="flex justify-center">

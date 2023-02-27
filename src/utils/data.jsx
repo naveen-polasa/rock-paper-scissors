@@ -17,11 +17,9 @@ export const data = [
 ];
 
 export const checkResult = (op, op1) => {
-  console.log(op, op1);
   let final = "";
-  let desc = "";
   if (op === op1) {
-    final = "Game Is TIE!";
+    final = "Game is TIE!";
   } else if (
     (op == 1 && op1 == 2) ||
     (op == 2 && op1 == 3) ||
@@ -31,6 +29,5 @@ export const checkResult = (op, op1) => {
   } else {
     final = "You WON! 🎉";
   }
-
-  return { final, desc };
+  return final;
 };

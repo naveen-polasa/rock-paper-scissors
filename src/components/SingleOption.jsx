@@ -12,7 +12,7 @@ const SingleOption = ({ id, name, img }) => {
     >
       <div>
         <img src={img} alt={name} className="w-36 rounded-full" />
-        <h3 className="capitalize text-xl text-center pt-2">{name}</h3>
+        <h3 className="capitalize text-xl text-center pt-2 font-semibold">{name}</h3>
       </div>
     </div>
   );

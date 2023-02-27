@@ -2,14 +2,12 @@ import { useRpsContext } from "../context";
 import { checkResult } from "../utils/data";
 
 const Result = () => {
-  let { option, cpOption } = useRpsContext();
-  cpOption = cpOption + 1;
-  console.log(option,cpOption)
-  const { final, desc } = checkResult(option, cpOption);
-
+  let { option, cpOption, showResult } = useRpsContext();
+  if (!showResult) return;
+  const final = checkResult(option, cpOption + 1);
   return (
-    <div className="">
-      <h4 className="font-bold my-2 text-2xl"> {final}</h4>
+    <div>
+      <h4 className="font-bold my-2 text-2xl font-mono border-2 border-red-400 rounded-xl bg-orange-200"> {final}</h4>
     </div>
   );
 };
