@@ -2,17 +2,17 @@ export const data = [
   {
     id: 1,
     name: "rock",
-    img: "src/assets/rock.png",
+    img: "./src/assets/rock.png",
   },
   {
     id: 2,
     name: "paper",
-    img: "src/assets/paper.png",
+    img: "./src/assets/paper.png",
   },
   {
     id: 3,
     name: "scissors",
-    img: "src/assets/scissors.png",
+    img: "./src/assets/scissors.png",
   },
 ];
 
